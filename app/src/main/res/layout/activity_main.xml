@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:id="@+id/cointainer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@color/orange">
+
+        <EditText
+            android:id="@+id/edURL"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="@color/white" />
+        <EditText
+            android:id="@+id/edFilmName"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_margin="15dp"
+            android:layout_height="30dp"/>
+
+        <DatePicker
+            android:id="@+id/edReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+        <EditText
+            android:id="@+id/edDirector"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_margin="15dp"
+            android:layout_height="30dp"
+            android:autofillHints=" "
+            android:inputType="text" />
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:onClick="addFilm"
+            android:text="Add Film"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cointainer2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/blue"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/container3"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

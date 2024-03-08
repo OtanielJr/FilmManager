@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageURl"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/txtFilmName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:hint="film name"/>
+    <TextView
+        android:id="@+id/txtRelease"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:hint="Release Date"/>
+    <TextView
+        android:id="@+id/txtDirector"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:hint="Director"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
